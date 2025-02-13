@@ -71,7 +71,7 @@ export default function Page() {
               className={`bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mr-4`}
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
-              disabled={noCount < 15} // Disable button until No is pressed 15 times
+              disabled={noCount < 8} // Disable button until No is pressed 15 times
             >
               Yes
             </button>
