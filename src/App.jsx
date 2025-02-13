@@ -1,6 +1,6 @@
 import { useState } from "react";
-import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
-import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
+// import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
+// import lovesvg2 from "./assets/Love In The Air SVG Cut File.svg";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -43,19 +43,22 @@ export default function Page() {
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
           <div className="text-4xl md:text-6xl font-bold my-4">
-            Ok Yayyyyy!!!
+            Hurayyy!!!
+          </div>
+          <div className="text-4x1 md:text-6x1 font-bold my-  ">
+          Thank you for saying yes boo! I will see you soon ❤🌸
           </div>
         </>
       ) : (
         <>
-          <img
+          {/* <img
             src={lovesvg}
             className="fixed animate-pulse top-10 md:left-24 left-6 md:w-40 w-28"
           />
           <img
             src={lovesvg2}
             className="fixed bottom-16 -z-10 animate-pulse md:right-24 right-10 md:w-40 w-32"
-          />
+          /> */}
           <img
             className="h-[230px] rounded-lg shadow-lg"
             src="https://gifdb.com/images/high/cute-Love-bear-roses-ou7zho5oosxnpo6k.gif"
@@ -68,6 +71,7 @@ export default function Page() {
               className={`bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mr-4`}
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
+              disabled={noCount < 15} // Disable button until No is pressed 15 times
             >
               Yes
             </button>
